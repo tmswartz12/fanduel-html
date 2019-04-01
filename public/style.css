@@ -3,7 +3,8 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Verdana;
+  font-size: 15px;
 }
 
 a {
@@ -22,4 +23,81 @@ nav a {
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+.nav-bar {
+  display: flex;
+  width: 100vw;
+  height: 66px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #2d363b;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.fanduel-logo {
+  max-width: 140px;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-menu-left {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  color: white;
+}
+
+.nav-link {
+  padding-left: 22px;
+  padding-right: 22px;
+  border-left: 1px solid rgb(115, 115, 120);
+}
+.nav-link.nav-link-last {
+  padding-left: 22px;
+  padding-right: 22px;
+  border-right: 1px solid rgb(115, 115, 120);
+}
+
+.nav-menu-right {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  margin-right: 10px;
+}
+
+.balance-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 22px;
+  padding-right: 10px;
+}
+
+.remaining-balance {
+  font-size: 0.72em;
+}
+
+.bold {
+  font-weight: bold;
+}
+.btn-add-funds {
+  display: flex;
+  width: 72px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  background-color: #6ea73d;
+  color: white;
+  border-radius: 2px;
+  font-size: 10px;
 }
