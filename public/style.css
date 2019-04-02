@@ -41,7 +41,9 @@ section {
 }
 
 /* Start Nav Bar */
-
+.hamburger {
+  display: none;
+}
 .nav-bar {
   display: flex;
   width: 100vw;
@@ -172,6 +174,7 @@ section {
   justify-content: center;
   align-items: center;
   background-color: white;
+  border-radius: 10px;
 }
 
 .team-box {
@@ -444,6 +447,11 @@ footer {
   color: #686868;
 }
 
+.league:hover {
+  background-color: #6ea73d;
+  color: white;
+}
+
 .league-active {
   background-color: #6ea73d;
   border: none;
@@ -595,3 +603,156 @@ footer {
 }
 
 /* End Footer */
+
+/* Media Queries */
+
+@media only screen and (max-width: 1300px) {
+  .nav-menu-left,
+  .nav-menu-right {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+    color: white;
+    font-size: 30px;
+  }
+
+  .main-body-left {
+    width: 65%;
+  }
+  .main-body-right {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .main-body {
+    display: flex;
+    width: 100%;
+    height: 1215px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .main-body-left {
+    display: flex;
+    margin-right: 5px;
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .main-body-left-row {
+    display: flex;
+    width: 100%;
+    height: 805px;
+    flex-direction: column;
+  }
+
+  .game-info-column {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .stats {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .scorecard {
+    height: 410px;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .main-body {
+    height: 1290px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-body-left {
+    width: 90%;
+    margin-right: 0px;
+  }
+
+  .main-body-right {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .main-body-left-row {
+    display: flex;
+    width: 100%;
+    height: 805px;
+    flex-direction: column;
+  }
+
+  .game-info-column {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .scorecard {
+    height: 410px;
+  }
+
+  .active-boxscore,
+  .active-boxscore-row {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .hamburger {
+    width: 55%;
+  }
+
+  .main-body-left {
+    width: 95%;
+    margin-right: 0px;
+  }
+
+  .main-body-right {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .main-body-left {
+    width: 97.5%;
+    margin-right: 0px;
+  }
+
+  .main-body-right {
+    width: 97.5%;
+  }
+  .game-clock {
+    display: none;
+  }
+
+  .team-box {
+    width: 50%;
+  }
+
+  .home-team-name {
+    font-size: 12px;
+  }
+
+  .away-team-name {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .home-team-name {
+    font-size: 10px;
+  }
+
+  .away-team-name {
+    font-size: 10px;
+  }
+}
