@@ -485,7 +485,7 @@ footer {
   width: 50%;
   justify-content: flex-start;
   flex-direction: column;
-  color: #f2f2f2;
+  color: #d4d6d8;
   font-size: 12px;
 }
 .boxscore-score {
@@ -527,11 +527,11 @@ footer {
 }
 
 .top-player-stats {
-  color: #f2f2f2;
+  color: #d4d6d8;
   font-size: 10px;
 }
 
-.boxscore-game-clock {
+.active-boxscore-game-clock {
   padding-left: 15px;
   color: #f2f2f2;
   font-size: 10px;
@@ -541,7 +541,42 @@ footer {
   display: flex;
   width: 105px;
   height: 75px;
+  flex-direction: column;
   border-right: 1px solid #686868;
+  color: #91979b;
+  font-size: 12px;
+}
+
+.unactive-boxscore-row {
+  display: flex;
+  width: 105px;
+  height: 50px;
+  flex-direction: row;
+}
+
+.unactive-boxscore-team-column {
+  display: flex;
+  width: 50%;
+  height: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.unactive-boxscore-score-column {
+  display: flex;
+  width: 50%;
+  height: 50px;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.unactive-boxscore-game-clock {
+  font-size: 10px;
+  padding-left: 20px;
 }
 
 /* End Footer */
