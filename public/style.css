@@ -68,12 +68,27 @@ section {
   color: white;
 }
 
+.nav-link-container {
+  display: flex;
+  height: 100%;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link-container:hover {
+  background-color: #4f5a61;
+}
+
+.nav-link-container:active {
+  background-color: #4f5a61;
+}
+
 .nav-link {
+  border-left: 1px solid #f2f2f2;
   padding-left: 22px;
   padding-right: 22px;
-  border-left: 1px solid #f2f2f2;
 }
-.nav-link.nav-link-last {
+.nav-link-last {
   padding-left: 22px;
   padding-right: 22px;
   border-right: 1px solid #f2f2f2;
