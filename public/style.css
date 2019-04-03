@@ -729,6 +729,7 @@ footer {
 
   .main-body-right {
     width: 97.5%;
+    margin-left: 0px;
   }
   .game-clock {
     display: none;
@@ -739,15 +740,15 @@ footer {
   }
 
   .home-team-name {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .away-team-name {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 475px) {
   .home-team-name {
     font-size: 10px;
   }
