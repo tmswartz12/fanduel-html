@@ -1,6 +1,6 @@
 # FanDuel - HTML
 
-This is part one of my coding assessment for FanDuel.
+This is part one of my coding assessment for FanDuel. Only HTML and CSS was used. Per the directions, no JS was used.
 
 To see part two... [Click Here!!!](https://github.com/tmswartz12/fanduel-react)
 
